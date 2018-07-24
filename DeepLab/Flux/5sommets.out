@@ -1,0 +1,17 @@
+/usr/lib64/python2.7/site-packages/mpich
+MODEL_TEST_OK
+ALL_PATH_SET
+/users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train
+CHECKPOINT DIR /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train
+LATEST_FILENAME None
+TRAIN_END
+CHECKPOINT DIR /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train
+LATEST_FILENAME None
+PATH IS /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt-500
+EVAL_END
+CHECKPOINT DIR /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train
+LATEST_FILENAME None
+PATH IS /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt-500
+VISUALISATION_END
+Converted 732 variables to const ops.
+EXPORT_END

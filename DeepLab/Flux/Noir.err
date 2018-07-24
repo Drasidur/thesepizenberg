@@ -1,0 +1,189 @@
+slurmstepd: error: execve(): export: No such file or directory
+srun: error: gpu-nc01: task 0: Exited with exit code 2
+slurmstepd: error: execve(): set: No such file or directory
+srun: error: gpu-nc01: task 0: Exited with exit code 2
+2018-07-10 12:42:24.870629: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+/usr/local/miniconda/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+/users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/python/framework/tensor_util.py:539: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  return np.fromstring(tensor.tensor_content, dtype=dtype).reshape(shape)
+/users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() or inspect.getfullargspec()
+  if d.decorator_argspec is not None), _inspect.getargspec(target))
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 13.975s
+
+OK
+--2018-07-10 14:42:39--  http://download.tensorflow.org/models/deeplabv3_pascal_train_aug_2018_01_04.tar.gz
+Résolution de download.tensorflow.org (download.tensorflow.org)... 172.217.19.144, 2a00:1450:4006:806::2010
+Connexion vers download.tensorflow.org (download.tensorflow.org)|172.217.19.144|:80...connecté.
+requête HTTP transmise, en attente de la réponse...416 Requested range not satisfiable
+
+    Le fichier a déjà été complètement récupéré; rien à faire.
+
+/usr/local/miniconda/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Training on trainval set
+WARNING:tensorflow:From /users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/python/ops/losses/losses_impl.py:691: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+INFO:tensorflow:Ignoring initialization; other checkpoint exists
+WARNING:tensorflow:From /users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/contrib/slim/python/slim/learning.py:736: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2018-07-10 12:43:02.142356: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+INFO:tensorflow:Restoring parameters from /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt-11
+INFO:tensorflow:Starting Session.
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Starting Queues.
+INFO:tensorflow:global_step/sec: 0
+INFO:tensorflow:Recording summary at step 11.
+INFO:tensorflow:global step 20: loss = 0.4442 (49.979 sec/step)
+INFO:tensorflow:global_step/sec: 0.018416
+INFO:tensorflow:Recording summary at step 22.
+INFO:tensorflow:global step 30: loss = 0.7211 (49.945 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:global_step/sec: 0.0200073
+INFO:tensorflow:Recording summary at step 34.
+INFO:tensorflow:global step 40: loss = 0.5243 (49.968 sec/step)
+INFO:tensorflow:global_step/sec: 0.0183344
+INFO:tensorflow:Recording summary at step 46.
+INFO:tensorflow:global step 50: loss = 0.7992 (47.994 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:global_step/sec: 0.0199971
+INFO:tensorflow:Recording summary at step 58.
+INFO:tensorflow:global step 60: loss = 0.2786 (47.716 sec/step)
+INFO:tensorflow:global step 70: loss = 0.2691 (47.914 sec/step)
+INFO:tensorflow:global_step/sec: 0.0216679
+INFO:tensorflow:Recording summary at step 70.
+INFO:tensorflow:global step 80: loss = 0.8869 (47.688 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:global_step/sec: 0.0200004
+INFO:tensorflow:Recording summary at step 82.
+INFO:tensorflow:global step 90: loss = 0.3177 (49.769 sec/step)
+INFO:tensorflow:global_step/sec: 0.019997
+INFO:tensorflow:Recording summary at step 94.
+INFO:tensorflow:global step 100: loss = 0.8716 (50.021 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:global_step/sec: 0.0183348
+INFO:tensorflow:Recording summary at step 106.
+INFO:tensorflow:global step 110: loss = 1.4451 (49.985 sec/step)
+INFO:tensorflow:global_step/sec: 0.0200022
+INFO:tensorflow:Recording summary at step 117.
+INFO:tensorflow:global step 120: loss = 0.4585 (49.952 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 129.
+INFO:tensorflow:global step 130: loss = 0.3289 (66.653 sec/step)
+INFO:tensorflow:global step 140: loss = 1.2938 (47.708 sec/step)
+INFO:tensorflow:Recording summary at step 141.
+INFO:tensorflow:global step 150: loss = 0.3628 (47.531 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 153.
+INFO:tensorflow:global step 160: loss = 0.4728 (47.759 sec/step)
+INFO:tensorflow:Recording summary at step 165.
+INFO:tensorflow:global step 170: loss = 0.2640 (49.750 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 177.
+INFO:tensorflow:global step 180: loss = 1.0430 (50.011 sec/step)
+INFO:tensorflow:Recording summary at step 189.
+INFO:tensorflow:global step 190: loss = 0.8804 (66.813 sec/step)
+INFO:tensorflow:global step 200: loss = 0.6626 (49.986 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 200.
+INFO:tensorflow:global step 210: loss = 0.1917 (49.984 sec/step)
+INFO:tensorflow:Recording summary at step 212.
+INFO:tensorflow:global step 220: loss = 1.1350 (44.327 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 225.
+INFO:tensorflow:global step 230: loss = 0.5355 (44.607 sec/step)
+INFO:tensorflow:Recording summary at step 238.
+INFO:tensorflow:global step 240: loss = 0.5333 (44.372 sec/step)
+INFO:tensorflow:global step 250: loss = 0.1805 (44.336 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 251.
+INFO:tensorflow:global step 260: loss = 0.2600 (44.365 sec/step)
+INFO:tensorflow:Recording summary at step 265.
+INFO:tensorflow:global step 270: loss = 1.2118 (44.381 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 278.
+INFO:tensorflow:global step 280: loss = 0.2654 (44.433 sec/step)
+INFO:tensorflow:global step 290: loss = 0.4116 (44.346 sec/step)
+INFO:tensorflow:Recording summary at step 291.
+INFO:tensorflow:global step 300: loss = 0.6799 (44.179 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 304.
+INFO:tensorflow:global step 310: loss = 0.4074 (44.224 sec/step)
+INFO:tensorflow:Recording summary at step 317.
+INFO:tensorflow:global step 320: loss = 0.3223 (44.389 sec/step)
+INFO:tensorflow:global step 330: loss = 0.5818 (44.271 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 331.
+INFO:tensorflow:global step 340: loss = 1.1085 (44.399 sec/step)
+INFO:tensorflow:Recording summary at step 344.
+INFO:tensorflow:global step 350: loss = 0.5019 (44.361 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 357.
+INFO:tensorflow:global step 360: loss = 0.3814 (44.285 sec/step)
+INFO:tensorflow:global step 370: loss = 0.2963 (44.388 sec/step)
+INFO:tensorflow:Recording summary at step 370.
+INFO:tensorflow:global step 380: loss = 1.0482 (44.327 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 383.
+INFO:tensorflow:global step 390: loss = 0.3248 (44.353 sec/step)
+INFO:tensorflow:Recording summary at step 397.
+INFO:tensorflow:global step 400: loss = 0.7558 (44.288 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:global step 410: loss = 0.5584 (45.178 sec/step)
+INFO:tensorflow:Recording summary at step 410.
+INFO:tensorflow:global step 420: loss = 0.8905 (44.414 sec/step)
+INFO:tensorflow:Recording summary at step 423.
+INFO:tensorflow:global step 430: loss = 0.4599 (44.487 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 436.
+INFO:tensorflow:global step 440: loss = 0.4308 (44.373 sec/step)
+INFO:tensorflow:Recording summary at step 449.
+INFO:tensorflow:global step 450: loss = 0.5445 (59.056 sec/step)
+INFO:tensorflow:global step 460: loss = 0.6180 (44.338 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 463.
+INFO:tensorflow:global step 470: loss = 0.5808 (44.556 sec/step)
+INFO:tensorflow:Recording summary at step 476.
+INFO:tensorflow:global step 480: loss = 0.2735 (44.378 sec/step)
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Recording summary at step 489.
+INFO:tensorflow:global step 490: loss = 0.1826 (58.957 sec/step)
+INFO:tensorflow:global step 500: loss = 0.3766 (44.330 sec/step)
+INFO:tensorflow:Stopping Training.
+INFO:tensorflow:Finished training! Saving model to disk.
+/usr/local/miniconda/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Evaluating on val set
+INFO:tensorflow:Performing single-scale test.
+INFO:tensorflow:Eval num images 1449
+INFO:tensorflow:Eval batch size 1 and num batch 1449
+INFO:tensorflow:Waiting for new checkpoint at /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train
+INFO:tensorflow:Found new checkpoint at /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt-500
+WARNING:tensorflow:From /users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/contrib/training/python/training/evaluation.py:303: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+2018-07-10 19:11:59.769271: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+INFO:tensorflow:Restoring parameters from /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt-500
+INFO:tensorflow:Starting evaluation at 2018-07-10-19:12:03
+INFO:tensorflow:Evaluation [144/1449]
+INFO:tensorflow:Evaluation [288/1449]
+INFO:tensorflow:Evaluation [432/1449]
+INFO:tensorflow:Evaluation [576/1449]
+INFO:tensorflow:Evaluation [720/1449]
+INFO:tensorflow:Evaluation [864/1449]
+INFO:tensorflow:Evaluation [1008/1449]
+INFO:tensorflow:Evaluation [1152/1449]
+INFO:tensorflow:Evaluation [1296/1449]
+INFO:tensorflow:Evaluation [1440/1449]
+INFO:tensorflow:Evaluation [1449/1449]
+INFO:tensorflow:Finished evaluation at 2018-07-10-20:29:32
+miou_1.0[0.637349844]

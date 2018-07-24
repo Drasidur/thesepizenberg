@@ -1,0 +1,94 @@
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+  Could not find a version that satisfies the requirement tensorflow-cpu==1.5 (from versions: )
+No matching distribution found for tensorflow-cpu==1.5
+  Could not find a version that satisfies the requirement python-pil (from versions: )
+No matching distribution found for python-pil
+  Could not find a version that satisfies the requirement python-numpy (from versions: )
+No matching distribution found for python-numpy
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+slurmstepd: error: execve(): export: No such file or directory
+srun: error: gpu-nc07: task 0: Exited with exit code 2
+slurmstepd: error: execve(): set: No such file or directory
+srun: error: gpu-nc07: task 0: Exited with exit code 2
+2018-06-21 14:12:20.646140: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+/usr/local/miniconda/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+/users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/python/framework/tensor_util.py:539: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  return np.fromstring(tensor.tensor_content, dtype=dtype).reshape(shape)
+/users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() or inspect.getfullargspec()
+  if d.decorator_argspec is not None), _inspect.getargspec(target))
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 18.603s
+
+OK
+--2018-06-21 16:12:39--  http://download.tensorflow.org/models/deeplabv3_pascal_train_aug_2018_01_04.tar.gz
+Résolution de download.tensorflow.org (download.tensorflow.org)... 172.217.19.144, 2a00:1450:4006:806::2010
+Connexion vers download.tensorflow.org (download.tensorflow.org)|172.217.19.144|:80...connecté.
+requête HTTP transmise, en attente de la réponse...416 Requested range not satisfiable
+
+    Le fichier a déjà été complètement récupéré; rien à faire.
+
+/usr/local/miniconda/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Training on trainval set
+WARNING:tensorflow:From /users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/python/ops/losses/losses_impl.py:691: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+INFO:tensorflow:Ignoring initialization; other checkpoint exists
+WARNING:tensorflow:From /users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/contrib/slim/python/slim/learning.py:736: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2018-06-21 14:13:07.299097: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+INFO:tensorflow:Restoring parameters from /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt-11
+INFO:tensorflow:Starting Session.
+INFO:tensorflow:Saving checkpoint to path /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt
+INFO:tensorflow:Starting Queues.
+INFO:tensorflow:global_step/sec: 0
+INFO:tensorflow:Recording summary at step 11.
+INFO:tensorflow:Stopping Training.
+INFO:tensorflow:Finished training! Saving model to disk.
+/usr/local/miniconda/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Evaluating on val set
+INFO:tensorflow:Performing single-scale test.
+INFO:tensorflow:Eval num images 1449
+INFO:tensorflow:Eval batch size 1 and num batch 1449
+INFO:tensorflow:Waiting for new checkpoint at /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train
+INFO:tensorflow:Found new checkpoint at /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt-12
+WARNING:tensorflow:From /users/thesepizenberg/jdesverg/DeepLab/venv/lib/python3.6/site-packages/tensorflow/contrib/training/python/training/evaluation.py:303: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+2018-06-21 14:15:22.255601: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+INFO:tensorflow:Restoring parameters from /users/thesepizenberg/jdesverg/DeepLab/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set/train/model.ckpt-12
+INFO:tensorflow:Starting evaluation at 2018-06-21-14:15:27
+INFO:tensorflow:Evaluation [144/1449]
+INFO:tensorflow:Evaluation [288/1449]
+INFO:tensorflow:Evaluation [432/1449]
+INFO:tensorflow:Evaluation [576/1449]
+INFO:tensorflow:Evaluation [720/1449]
+INFO:tensorflow:Evaluation [864/1449]
+INFO:tensorflow:Evaluation [1008/1449]
+INFO:tensorflow:Evaluation [1152/1449]
+INFO:tensorflow:Evaluation [1296/1449]
+INFO:tensorflow:Evaluation [1440/1449]
+INFO:tensorflow:Evaluation [1449/1449]
+INFO:tensorflow:Finished evaluation at 2018-06-21-15:54:55
+miou_1.0[0.822284]
