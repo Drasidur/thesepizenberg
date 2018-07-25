@@ -1,0 +1,18 @@
+clear;
+close all;
+
+% list : contient dans une structure les annotations d'apprentissage
+list = dir(SOURCE_PATH);
+% n : nombre d'annotations
+n = length(list);
+
+Image1 = imread('C:\Users\julie_000\Desktop\VOCdevkit\VOC2012\SegmentationClass\2007_000032.png');
+Image2 = imread('C:\Users\julie_000\Desktop\VOCdevkit\VOC2012\SegmantationClassBNW\2007_000032.png');
+
+[m, m_d, m_a] = mIoU(Image1, Image2);
+
+subplot 121
+imshow(m_d);
+subplot 122
+imshow(m_a);
+m
